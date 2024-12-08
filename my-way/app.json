@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "my-way",
+    "slug": "my-way",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "my-way",
+    "newArchEnabled": true,
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "associatedDomains": ["applinks:expo.dev"],
+      "UIBackgroundModes": ["location", "fetch"],
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to show your position on the map.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app uses your location to track your trips, even when the app is not actively in use.",
+        "NSLocationAlwaysUsageDescription": "This app needs to access your location even when it’s not in use to track your trips.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to allow you to upload and select a profile picture.",
+        "usesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.yab12222.myway"
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yab12222.myway"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": ["expo-router", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ae40e7b3-db6d-4547-90cf-6105e4e92172"
+      }
+    }
+  }
+}
